@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
 
 //@WebServlet("/memberList.do")
 public class MemberListController implements Controller {
@@ -16,8 +17,7 @@ public class MemberListController implements Controller {
         //1. 클라이언트 요청 받기
         //2. 회원 전체 리스트 가져오기(model 연동)
         MemberDAO dao = new MemberDAO();
-        ArrayList<MemberVO> list = dao.memberList();
-
+        List<MemberVO> list = dao.memberList();
         request.setAttribute("list",list);
 
         //3. 다음페이지

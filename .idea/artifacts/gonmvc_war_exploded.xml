@@ -12,6 +12,7 @@
           <element id="library" level="project" name="Spring MVC-5.2.3.RELEASE" />
           <element id="library" level="project" name="mysql-connector-java-8.0.17" />
           <element id="library" level="project" name="jstl-1.2" />
+          <element id="library" level="project" name="mybatis-3.4.6" />
         </element>
       </element>
     </root>
